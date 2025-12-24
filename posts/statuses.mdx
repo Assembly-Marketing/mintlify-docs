@@ -15,73 +15,78 @@ Draft → Scheduled → In Progress → Posted
                               ↘ Failed
 ```
 
-| Status | Color | Description |
-|--------|-------|-------------|
-| **Draft** | Gray | Work in progress, not scheduled |
-| **Scheduled** | Yellow | Set to publish at a future time |
-| **In Progress** | Blue | Currently being sent to the platform |
-| **Posted** | Green | Successfully published and live |
-| **Failed** | Red | Publishing failed, requires attention |
+| Status          | Color  | Description                           |
+| --------------- | ------ | ------------------------------------- |
+| **Draft**       | Gray   | Work in progress, not scheduled       |
+| **Scheduled**   | Yellow | Set to publish at a future time       |
+| **In Progress** | Blue   | Currently being sent to the platform  |
+| **Posted**      | Green  | Successfully published and live       |
+| **Failed**      | Red    | Publishing failed, requires attention |
 
 ## Status details
 
 <Tabs>
   <Tab title="Draft">
     A post starts as a draft and remains there until scheduled.
-    
+
     **Characteristics:**
+
     - Won't publish automatically
     - Can be edited without time pressure
     - Doesn't appear on the calendar's scheduled view
     - May be incomplete or awaiting approval
-    
+
     **To exit:** Schedule the post for a specific time or click Post Now.
   </Tab>
   <Tab title="Scheduled">
     Scheduled posts have a set publish time and will go live automatically.
-    
+
     **Characteristics:**
+
     - Appears on the calendar
     - Can still be edited until publishing begins
     - Can be rescheduled or unscheduled
     - Shows countdown to publish time
-    
+
     **Next:** Automatically moves to In Progress when publishing starts.
   </Tab>
   <Tab title="In Progress">
     The scheduled time has arrived and Ordinal is sending content to the platform.
-    
+
     **Characteristics:**
+
     - Usually takes seconds
     - Video uploads may take longer
     - Cannot be edited during this phase
-    
+
     **Next:** Posted on success, Failed on error.
   </Tab>
   <Tab title="Posted">
     Successfully published and live on the platform.
-    
+
     **Characteristics:**
+
     - Click to view the live post
     - Analytics begin collecting
     - Can be duplicated for reuse
     - Cannot be edited in Ordinal (edit on platform directly)
-    
+
     <Check>
-    Posted content is live! You can view it on the platform or track engagement in Analytics.
+      Posted content is live! You can view it on the platform or track engagement in Analytics.
     </Check>
   </Tab>
   <Tab title="Failed">
     Publishing did not succeed.
-    
+
     **Characteristics:**
+
     - Error message explains the cause
     - Content is not live
     - Requires action to resolve
     - Can be retried after fixing the issue
-    
+
     <Warning>
-    Failed posts need attention. Check the error message and either fix the issue and retry, or reschedule for later.
+      Failed posts need attention. Check the error message and either fix the issue and retry, or reschedule for later.
     </Warning>
   </Tab>
 </Tabs>
@@ -114,10 +119,10 @@ After fixing the issue, click **Retry** to attempt publishing again.
 
 When a post targets multiple platforms, each channel has its own status:
 
-| Platform | Status |
-|----------|--------|
-| LinkedIn | ✅ Posted |
-| Twitter/X | ✅ Posted |
+| Platform  | Status                              |
+| --------- | ----------------------------------- |
+| LinkedIn  | ✅ Posted                            |
+| Twitter/X | ✅ Posted                            |
 | Instagram | ❌ Failed (media format unsupported) |
 
 View per-channel status in the post detail view. Retry failed channels individually without affecting successful ones.
@@ -126,11 +131,11 @@ View per-channel status in the post detail view. Retry failed channels individua
 
 If your workspace uses approvals, posts may require approval before scheduling:
 
-| Approval State | Effect |
-|----------------|--------|
-| Pending | Cannot schedule until approved |
-| Approved | Can be scheduled normally |
-| Rejected | Returns to draft for revision |
+| Approval State | Effect                         |
+| -------------- | ------------------------------ |
+| Pending        | Cannot schedule until approved |
+| Approved       | Can be scheduled normally      |
+| Rejected       | Returns to draft for revision  |
 
 With blocking approvals enabled, the Schedule button is disabled until approval is granted.
 
@@ -143,7 +148,7 @@ View posts by status throughout Ordinal:
 - **Dashboard** — Quick counts of posts in each status
 
 <Tip>
-Enable failure notifications in **Settings → Notifications** to catch failed posts immediately.
+  Enable failure notifications in **Settings → Notifications** to catch failed posts immediately.
 </Tip>
 
 ## Related
