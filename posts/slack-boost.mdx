@@ -1,6 +1,5 @@
 ---
 title: "Slack Boost"
-description: "Amplify content reach through team engagement"
 icon: "users-medical"
 ---
 
@@ -15,10 +14,9 @@ Slack Boost notifies your team via Slack when posts publish, encouraging them to
 5. Team members engage—likes, comments, shares—boosting visibility
 
 The Slack message includes:
-- Post title and preview
-- Links to view on each platform
-- Link to view in Ordinal
-- Any custom notes you added
+- Post title (links to the post in Ordinal)
+- Button to view on each platform where it published
+- Your custom message, if you added one
 
 ## Setting up Slack Boost
 
@@ -26,11 +24,11 @@ The Slack message includes:
   <Step title="Connect Slack">
     Go to **Settings → Slack** and click **Connect Slack**. Authorize Ordinal to access your Slack workspace.
   </Step>
-  <Step title="Configure boost channels">
+  <Step title="Add boost channels">
     In the Slack Boost section, click **Add Channel** and select which Slack channels should receive boost notifications.
   </Step>
   <Step title="Enable auto-boost (optional)">
-    Toggle **Auto-boost** to notify on every post automatically. You can disable it on individual posts.
+    Toggle **Auto-boost** on a channel to notify on every post automatically. You can still remove boosts from individual posts.
     
     <Check>
     Slack Boost is configured. Posts will now notify your team.
@@ -40,30 +38,22 @@ The Slack message includes:
 
 ## Adding Slack Boost to posts
 
-<Tabs>
-  <Tab title="Manual boost">
-    For individual posts:
-    
-    1. Open the post
-    2. Find **Slack Boost** in the sidebar
-    3. Click to add a boost
-    4. Select the Slack channel(s)
-    5. Add a custom message (optional)
-    
-    When the post publishes, your configured channels receive the notification.
-  </Tab>
-  <Tab title="Auto-boost">
-    When auto-boost is enabled:
-    
-    - Every new post automatically includes Slack Boost
-    - Posts notify your default boost channels
-    - Remove the boost from individual posts if not needed
-    
-    <Tip>
-    Auto-boost ensures nothing slips through, but don't over-notify. Reserve boosts for content where engagement genuinely matters.
-    </Tip>
-  </Tab>
-</Tabs>
+### Manual boost
+
+1. Open a post and scroll to **Post Automations**
+2. Click **+ Slack Boost**
+3. Select the Slack channel
+4. Add a custom message (optional)
+
+When the post publishes, your configured channels receive the notification.
+
+### Auto-boost
+
+When auto-boost is enabled on a channel, every new post automatically includes a Slack Boost to that channel. Remove the boost from individual posts if not needed.
+
+<Tip>
+Don't over-notify. Reserve boosts for content where engagement genuinely matters—auto-boosting everything leads to notification fatigue.
+</Tip>
 
 ## Custom messages
 
@@ -71,85 +61,36 @@ Add context to help your team engage meaningfully:
 
 | Type | Example |
 |------|---------|
-| **Default** | Just the post link and platform buttons |
-| **Announcement** | "Our big product launch is live! Please like and share 🚀" |
-| **Request** | "Key messaging for Q4—comments especially helpful" |
-| **Urgency** | "Going for reach—please engage within the first hour" |
+| **Announcement** | "Big product launch—please like and share! 🚀" |
+| **Request** | "Key Q4 messaging—comments especially helpful" |
+| **Urgency** | "Going for reach—engage within the first hour" |
 
-Custom messages help team members understand the ask and engage appropriately.
+Custom messages appear under "Notes" in the Slack notification.
 
 ## Choosing the right channel
 
-Create dedicated Slack channels for boost requests:
+Target the right audience for each post. A company announcement might go to `#all-hands` while a product feature post goes to `#product-team`.
 
-| Channel | Use case |
-|---------|----------|
+| Channel example | Use case |
+|-----------------|----------|
 | `#social-boost` | All boost requests |
-| `#marketing-boost` | Marketing team only |
-| `#leadership-engagement` | Executive content |
-| `#product-team` | Product-focused posts |
-
-Different channels let you target the right audience for different content. A company announcement might go to `#all-hands` while a feature post goes to `#product-team`.
+| `#marketing` | Marketing team content |
+| `#leadership` | Executive posts |
 
 ## Best practices
 
-<AccordionGroup>
-  <Accordion title="Engage authentically">
-    Encourage meaningful comments over generic reactions. A thoughtful comment from a real employee carries more weight than a dozen likes.
-  </Accordion>
-  <Accordion title="Stagger engagement">
-    Suggest team members engage over the first hour rather than all at once. Gradual engagement looks more organic to platform algorithms.
-  </Accordion>
-  <Accordion title="Match expertise">
-    Have team members engage with content relevant to their role. A sales leader commenting on customer success is more credible than random likes.
-  </Accordion>
-  <Accordion title="Don't over-boost">
-    Reserve boost requests for content where engagement matters. Too many requests leads to notification fatigue and lower participation.
-  </Accordion>
-</AccordionGroup>
+- **Encourage meaningful engagement** — A thoughtful comment from an employee carries more weight than generic likes
+- **Stagger engagement** — Suggest team members engage over the first hour rather than all at once
+- **Match expertise** — Have team members engage with content relevant to their role
+- **Don't over-boost** — Too many requests leads to notification fatigue
 
-## Removing Slack Boost
-
-To prevent a specific post from notifying Slack:
-
-1. Open the post
-2. Find the Slack Boost section
-3. Toggle it off or click Remove
-4. That post won't notify Slack when it publishes
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Team not receiving notifications">
-    - Verify Slack is connected in **Settings → Slack**
-    - Check the channel permissions in Slack
-    - Ensure the Ordinal app is added to the target channel
-    - Re-authorize if the connection expired
-  </Accordion>
-  <Accordion title="Wrong channel receiving notifications">
-    Review your Slack Boost configuration in Settings. Check which channels are set as default and which are selected on individual posts.
-  </Accordion>
-  <Accordion title="Low participation">
-    - Make boost requests easy to act on with direct links
-    - Add clear calls-to-action in custom messages
-    - Don't over-notify—boost fatigue reduces engagement
-  </Accordion>
-</AccordionGroup>
-
-## Related
+## Learn more
 
 <CardGroup cols={2}>
-  <Card title="Slack Integration" icon="slack" href="/integrations/slack">
-    Connect Slack to Ordinal.
-  </Card>
   <Card title="Auto-Engagements" icon="thumbs-up" href="/posts/auto-engagements">
-    Automate engagement actions.
+    Automate likes, comments, and reposts.
   </Card>
-  <Card title="Notifications" icon="bell" href="/collaboration/notifications">
-    Configure all notification types.
-  </Card>
-  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
-    Track boost impact on reach.
+  <Card title="Social Profiles" icon="share-nodes" href="/social-profiles/overview">
+    Connect your social accounts.
   </Card>
 </CardGroup>
-
