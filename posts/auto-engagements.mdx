@@ -1,160 +1,67 @@
 ---
 title: "Auto-Engagements"
-description: "Automate engagement actions when posts publish"
 icon: "thumbs-up"
 ---
 
-Auto-engagements automatically perform engagement actions on your posts after they publish. Configure connected profiles to like, comment, or interact with your content, boosting initial visibility and engagement signals.
+Auto-engagements automatically interact with your posts after they publish—likes, comments, and reposts from your connected accounts. This boosts initial visibility and sends positive signals to platform algorithms.
 
-## How auto-engagements work
-
-When you publish a post, auto-engagements trigger based on your configuration:
-
-1. Post publishes to the platform
-2. After a configurable delay, engagement profiles interact with the post
-3. Each engagement appears as activity on the platform
-4. The post benefits from early engagement signals
-
-Delays help engagements appear natural rather than immediate.
+<Note>
+**Plan availability:** Starter workspaces can only add auto-engagements from the same account as the posting account. Pro workspaces can use any connected account for auto-engagements.
+</Note>
 
 ## Engagement types
 
-<Tabs>
-  <Tab title="Auto-like">
-    Connected engagement profiles automatically like your post after publishing.
-    
-    **Good for:**
-    - Boosting initial engagement metrics
-    - Signaling quality to platform algorithms
-    - Increasing visibility in feeds
-    
-    Likes are simple and low-risk. They provide a baseline of engagement without requiring content.
-  </Tab>
-  <Tab title="Auto-comment">
-    Add an automatic first comment after your post publishes.
-    
-    **Common uses:**
-    - Adding context or a call-to-action
-    - Placing hashtags in comments (popular on Instagram)
-    - Asking a question to prompt discussion
-    - Adding links you don't want in the main post
-    
-    <Tip>
-    On Instagram, putting hashtags in the first comment keeps your caption clean while maintaining discoverability.
-    </Tip>
-  </Tab>
-</Tabs>
-
-## Setting up auto-engagements
-
-Auto-engagements require **engagement profiles**—accounts connected specifically for interaction rather than publishing.
-
-<Steps>
-  <Step title="Connect engagement profiles">
-    Go to **Settings → Profiles → Engagement** and connect accounts you want to use for engagement actions.
-  </Step>
-  <Step title="Configure on a post">
-    When creating or editing a post, find the **Auto-Engagement** section.
-  </Step>
-  <Step title="Select profiles and actions">
-    Choose which profiles should engage and what actions to take (like, comment).
-  </Step>
-  <Step title="Set delays">
-    Configure when engagements should fire—30 seconds to hours after publishing.
-  </Step>
-  <Step title="Add comment content">
-    For auto-comments, write the comment content.
-    
-    <Check>
-    Engagements are configured. They'll fire automatically when the post publishes.
-    </Check>
-  </Step>
-</Steps>
+| Type | What it does | Timing |
+|------|--------------|--------|
+| **Auto-Like** | Connected profiles like your post | Trickles in over 10 minutes after posting |
+| **Auto-Comment** | Add a first comment (great for CTAs, hashtags, or links) | Configurable delay (immediate to 24 hours) |
+| **Auto-Repost** | Reshare from another connected account | Configurable delay (immediate to 24 hours) |
 
 ## Platform support
 
-| Platform | Auto-Like | Auto-Comment |
-|----------|-----------|--------------|
-| LinkedIn | ✅ | ✅ |
-| Twitter/X | ✅ | ✅ |
-| Instagram | ✅ | ✅ |
-| Facebook | ✅ | ✅ |
+Not all platforms support all engagement types due to API limitations:
 
-<Note>
-Engagement actions use the connected profile's authorization. If a profile becomes disconnected, scheduled engagements won't execute.
-</Note>
+| Platform   | Auto-Like | Auto-Comment | Auto-Repost |
+|------------|-----------|--------------|-------------|
+| LinkedIn   | ✅        | ✅           | ✅          |
+| Twitter/X  | ✅        | ✅           | ✅          |
+| Instagram  | ❌        | ✅           | ❌          |
+| Facebook   | ❌        | ✅           | ❌          |
 
-## Timing and delays
+For platform-specific details, see each [channel's documentation](/social-profiles/overview).
 
-Configure when engagements fire relative to post publication:
+## Setting up auto-engagements
 
-| Delay | Use case |
-|-------|----------|
-| **30 seconds** | Minimum delay to ensure post is available |
-| **5-15 minutes** | Quick boost while still appearing natural |
-| **30+ minutes** | Spread engagements for organic appearance |
-| **Hours** | Stagger across multiple profiles |
+1. Open a post and scroll to the **Auto-Engagement** section
+2. Click the engagement type you want to add (Like, Comment, or Repost)
+3. Select which connected account(s) should perform the action
+4. For comments and reposts, write the content and set a delay
+5. Engagements fire automatically when the post publishes
+
+<Check>
+Auto-engagements are configured per post. They only run once when the post publishes.
+</Check>
+
+## Timing
+
+- **Auto-Likes** trickle in automatically over 10 minutes after posting—no configuration needed
+- **Auto-Comments and Reposts** let you set a custom delay from immediate to 24 hours
 
 <Tip>
-Staggering engagements from multiple profiles across different delays looks more organic than simultaneous actions from everyone.
+Stagger engagements from multiple accounts across different delays (5 min, 15 min, 30 min) for a more organic appearance.
 </Tip>
 
 ## Best practices
 
-<Warning>
-Use auto-engagements responsibly. Excessive automation can appear inauthentic and may trigger platform rate limits.
-</Warning>
+- **Use responsibly** — A few strategic engagements complement genuine activity. Don't overdo it.
+- **Vary your patterns** — Avoid identical timing or comments on every post.
+- **Add value with comments** — Generic "Great post!" comments don't help. Add context, a question, or a useful link.
 
-<AccordionGroup>
-  <Accordion title="Use responsibly">
-    Automated engagement should complement genuine activity, not replace it. Keep it modest—a few strategic engagements, not dozens.
-  </Accordion>
-  <Accordion title="Vary patterns">
-    Don't use identical timing or comments on every post. Platforms may flag repetitive automated behavior.
-  </Accordion>
-  <Accordion title="Add value with comments">
-    Auto-comments should be substantive. Generic "Great post!" comments don't add value and may hurt credibility. Consider:
-    - Adding relevant context
-    - Asking a genuine question
-    - Providing a useful link
-  </Accordion>
-  <Accordion title="Monitor for issues">
-    Watch for platform warnings or restrictions. Each platform has thresholds for automated activity. Adjust if you see issues.
-  </Accordion>
-</AccordionGroup>
+<Tip>
+**Need engagement profiles for your whole team?** Bulk discounts are available for engagement-only profiles. Reach out via in-app chat or email support@tryordinal.com.
+</Tip>
 
-## Monitoring engagements
-
-View the status of auto-engagements in the post detail view:
-
-| Status | Meaning |
-|--------|---------|
-| Pending | Scheduled to fire at a specific time |
-| Completed | Successfully executed with timestamp |
-| Failed | Error occurred—check details |
-
-If an engagement fails (profile disconnected, rate limited), you'll see the error and can retry or adjust.
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Engagements not firing">
-    - Verify the rule is configured on the post
-    - Check that engagement profiles are still connected
-    - Ensure the post actually published successfully
-  </Accordion>
-  <Accordion title="Auto-comment not appearing">
-    Some platforms may delay or filter automated comments. Try:
-    - Increasing the delay time
-    - Varying comment text between posts
-    - Checking for platform restrictions
-  </Accordion>
-  <Accordion title="Platform warning or restriction">
-    Reduce automation frequency immediately. Disconnect the affected profile temporarily if needed. Each platform has different thresholds.
-  </Accordion>
-</AccordionGroup>
-
-## Related
+## Learn more
 
 <CardGroup cols={2}>
   <Card title="Slack Boost" icon="slack" href="/posts/slack-boost">
@@ -162,11 +69,5 @@ If an engagement fails (profile disconnected, rate limited), you'll see the erro
   </Card>
   <Card title="Social Profiles" icon="share-nodes" href="/social-profiles/overview">
     Connect scheduling and engagement profiles.
-  </Card>
-  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
-    Track engagement performance.
-  </Card>
-  <Card title="Scheduling" icon="clock" href="/posts/scheduling-posts">
-    Set up your posting schedule.
   </Card>
 </CardGroup>
