@@ -1,39 +1,21 @@
 ---
 title: "Cross-Posting"
-description: "Publish to multiple platforms from a single post"
 icon: "arrows-repeat"
 ---
 
-Cross-posting lets you create content once and distribute it across multiple social platforms. Each platform version can be customized while sharing a unified schedule and campaign association.
-
-## How cross-posting works
-
-When you select multiple platforms in the channel selector, Ordinal creates linked versions of your post for each platform. By default, content syncs across all versions—edit one and the others update automatically.
-
-<Note>
-Content adapts automatically to each platform's character limits and formatting capabilities. The editor shows real-time counts for each platform.
-</Note>
-
-| Platform | Character Limit | Media Support |
-|----------|-----------------|---------------|
-| Twitter/X | 280 (25K with Premium) | 4 images, video, GIF |
-| LinkedIn | 3,000 | Images, video, documents |
-| Facebook | 63,206 | Images, video, links |
-| Instagram | 2,200 | Images, video, carousels |
-| Threads | 500 | Images, video |
-| TikTok | 2,200 | Video only |
+Cross-posting lets you create content once and distribute it across multiple social platforms from a single post. Unlike many scheduling tools, Ordinal gives you full flexibility—customize your copy and assets independently for each platform so you can optimize content for every audience.
 
 ## Creating a cross-post
 
 <Steps>
   <Step title="Select platforms">
-    Create a new post and click multiple platforms in the channel selector. Each shows its requirements.
+    Create a new post and click the **Cross-Post** button to add platforms. Select as many as you need.
   </Step>
-  <Step title="Write content">
-    Content syncs to all platforms by default. The editor shows character counts for each.
+  <Step title="Write your content">
+    Start writing in any platform tab. By default, content syncs across all platforms automatically.
   </Step>
   <Step title="Customize per platform">
-    Click each platform tab to preview and optionally customize that version.
+    Click each platform tab to tailor that version. Change the copy, adjust hashtags, swap out media—each platform is fully independent.
   </Step>
   <Step title="Select accounts">
     Choose which connected account to use for each platform.
@@ -51,69 +33,50 @@ Content adapts automatically to each platform's character limits and formatting 
 Start with your longest-form platform (usually LinkedIn), then customize shorter versions. Writing long and trimming is easier than writing short and expanding.
 </Tip>
 
-## Content synchronization
+## Platform tabs
 
-<Tabs>
-  <Tab title="Synced mode">
-    When content is synced (the default):
-    - Edit text and it updates everywhere
-    - Add media and it appears on all platforms
-    - Formatting adjusts automatically per platform
-    
-    A "Synced" indicator shows when content is linked across platforms.
-  </Tab>
-  <Tab title="Custom content">
-    To tailor content for a specific platform:
-    
-    1. Click the platform tab in the composer
-    2. Make your changes—text, hashtags, media
-    3. The content diverges from other platforms
-    4. The sync indicator updates to show "Custom"
-    
-    Customizations are platform-specific and don't affect other versions.
-  </Tab>
-  <Tab title="Re-syncing">
-    To copy content from one platform to others:
-    
-    1. Click the **Sync** button
-    2. Choose the source platform
-    3. Select which platforms to update
-    4. Content copies over, replacing any customizations
-  </Tab>
-</Tabs>
+Each platform in your cross-post has its own tab at the top of the editor. Click a tab to:
 
-## Media across platforms
+- See the live preview for that platform
+- Edit copy specific to that platform
+- Add, remove, or reorder media for that platform
+- View the character count and limits
 
-Media syncs by default but can be customized per platform. Key considerations:
+Changes you make in one tab only affect that platform—unless content is synced.
 
-| Consideration | Details |
-|---------------|---------|
-| **Aspect ratios** | Instagram favors 1:1 or 4:5; Twitter favors 16:9 |
-| **Carousels** | Different max images per platform |
-| **PDFs** | LinkedIn only |
-| **Video length** | Varies significantly by platform |
+## Customizing per channel
 
-Ordinal warns you when media won't work on a particular platform. Customize or remove media for that version as needed.
+Ordinal lets you customize **both copy and assets** independently for each platform:
 
-<Card title="Media & Assets" icon="image" href="/posts/media">
-  Complete media specifications and platform requirements.
-</Card>
+| What you can customize | Examples |
+|------------------------|----------|
+| **Copy** | Different hooks, hashtag strategies, character lengths |
+| **Assets** | Platform-optimized images, different aspect ratios, video vs. static |
+| **Mentions** | Tag platform-specific accounts |
+| **Links** | Include or exclude based on platform support |
 
-## Scheduling and publishing
+When you edit a platform's content, it diverges from the others. The sync indicator updates to show that platform has custom content.
 
-Cross-posts share scheduling:
-- Single scheduled time for all platforms
-- Same campaign and labels
-- Unified view on the calendar
+## Syncing content
 
-Publishing happens independently:
-- Each platform publishes separately
-- Success or failure tracked per-channel
-- One failure doesn't affect other platforms
+By default, content syncs across all platforms—edit one and the others update automatically. But once you customize a platform, it diverges.
 
-<Check>
-If one platform fails, the others still publish. Retry the failed platform individually from the post detail view.
-</Check>
+### How to re-sync
+
+If you want to copy content from one platform to others:
+
+1. Click the **Sync** button in the cross-post bar
+2. Choose your **source channel** (the one you want to copy from)
+3. Select which **destination channels** to update
+4. Choose what to sync:
+   - **Copy** — syncs text content
+   - **Assets** — syncs images and videos
+
+<Note>
+Syncing overwrites existing content on the destination channels. Some assets may not sync if they're not supported by the destination platform (e.g., PDFs only work on LinkedIn).
+</Note>
+
+You can sync copy to some channels and assets to others—they're independent options.
 
 ## Best practices
 
@@ -127,41 +90,18 @@ If one platform fails, the others still publish. Retry the failed platform indiv
     - **Instagram:** 5-10 discoverable hashtags (or in first comment)
     - **Twitter:** 1-3 minimal, focused hashtags
   </Accordion>
-  <Accordion title="Stagger when appropriate">
-    You can publish all platforms simultaneously, but staggering by 15-30 minutes can catch different audience segments and appear more organic.
-  </Accordion>
   <Accordion title="Preview each version">
     Always check the preview for each platform before scheduling. Rendering differences, link previews, and cropping can surprise you.
   </Accordion>
 </AccordionGroup>
 
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Content not syncing between platforms">
-    Check if sync was manually broken by customizing. Click the Sync button to re-sync from your preferred source platform.
-  </Accordion>
-  <Accordion title="One platform failed while others succeeded">
-    Open the post detail view to see per-platform status. Check the error message for the failed platform and retry after fixing the issue.
-  </Accordion>
-  <Accordion title="Media appearing differently across platforms">
-    Each platform crops and displays media differently. Use platform-recommended dimensions or customize media per platform for best results.
-  </Accordion>
-</AccordionGroup>
-
-## Related
+## Learn more
 
 <CardGroup cols={2}>
-  <Card title="Drafting Posts" icon="pen-to-square" href="/posts/drafting-posts">
-    Create and compose content.
+  <Card title="Scheduling Posts" icon="clock" href="/posts/scheduling-posts">
+    Set publish times and manage cross-post scheduling.
   </Card>
-  <Card title="Calendar" icon="calendar" href="/calendar/overview">
-    View your cross-post schedule.
-  </Card>
-  <Card title="Campaigns" icon="bullhorn" href="/campaigns/overview">
-    Group cross-posts into campaigns.
-  </Card>
-  <Card title="Analytics" icon="chart-line" href="/analytics/overview">
-    Track performance across platforms.
+  <Card title="Media & Assets" icon="image" href="/posts/media">
+    Platform specs and media requirements.
   </Card>
 </CardGroup>

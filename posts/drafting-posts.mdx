@@ -3,105 +3,42 @@ title: "Drafting Posts"
 icon: "pen-to-square"
 ---
 
-Once you've opened the post composer, this is where your content comes to life. The editor is built for speed—keyboard shortcuts, slash commands, and real-time collaboration help you write and refine faster.
+Once you've created a post, this is where your content comes to life. The editor gives you everything you need—a rich text experience, real-time previews, and collaborative tools—all designed to help you write and refine faster.
+
+## The editor
+
+The post page is split into two main areas:
+
+- **Editor** — The left side where you write your content. Each platform you're posting to has its own tab, showing a live preview of how your post will appear.
+- **Sidebar** — The right side with post settings: scheduling, labels, campaigns, notes, and status.
 
 ## Text formatting
 
 Format your content using the toolbar or keyboard shortcuts:
 
-| Format | Shortcut | Notes |
-|--------|----------|-------|
-| **Bold** | `Cmd/Ctrl + B` | Unicode bold on LinkedIn/Twitter |
-| *Italic* | `Cmd/Ctrl + I` | Unicode italic on LinkedIn/Twitter |
-| Link | `Cmd/Ctrl + K` | Opens link dialog |
-
-<Note>
-LinkedIn and Twitter don't support native rich text, so Ordinal uses Unicode characters that render as bold or italic. The result looks right on the platform even though it's technically plain text.
-</Note>
-
-### Platform formatting support
-
-| Platform | Bold/Italic | Clickable Links |
-|----------|-------------|-----------------|
-| LinkedIn | ✅ Unicode | ✅ |
-| Twitter/X | ✅ Unicode | ✅ |
-| Instagram | ❌ | ❌ Caption only |
-| Facebook | ❌ | ✅ |
-| Threads | ✅ | ✅ |
+| Format     | Shortcut         |
+| ---------- | ---------------- |
+| **Bold**   | `Cmd/Ctrl + B`   |
+| *Italic*   | `Cmd/Ctrl + I`   |
+| Link       | `Cmd/Ctrl + K`   |
 
 ## Mentions
 
 Tag people, companies, and accounts by typing `@` followed by their name. Ordinal searches the platform for matches—select from the dropdown.
 
-| Platform | What you can mention |
-|----------|---------------------|
-| LinkedIn | People and Company pages |
-| Twitter/X | User accounts |
-| Instagram | User accounts (Business/Creator only) |
-| Facebook | Pages (not personal profiles) |
-| Threads | User accounts |
-
-Mentions become clickable links when published and may notify the tagged account.
+Mentions are supported on all platforms. See your [channel's page](/social-profiles/overview) for details on how tagging works for each specific platform.
 
 ## Hashtags
 
-Type `#` followed by your tag. Recommended counts vary by platform:
+Add hashtags by typing `#` followed by your tag. They'll automatically link when published.
 
-| Platform | Recommended |
-|----------|-------------|
-| LinkedIn | 3-5 |
-| Instagram | 5-10 |
-| Twitter/X | 1-3 |
-| TikTok | 3-5 |
+Hashtags are supported on all platforms. See your [channel's page](/social-profiles/overview) for platform-specific recommendations.
 
-<Tip>
-On Instagram, consider putting hashtags in a first comment (via auto-engagement) rather than the caption.
-</Tip>
+## Preview
 
-## Links
+The editor shows a live preview of your post as you type—including proper text truncation with "see more" exactly where the platform would cut off.
 
-Paste URLs directly or select text and press `Cmd/Ctrl + K` to add a link.
-
-LinkedIn, Twitter, and Facebook generate preview cards for links. On LinkedIn, you can customize the preview title and thumbnail image.
-
-<Tip>
-Use [link shorteners](/analytics/shortlinks) to track clicks with detailed analytics.
-</Tip>
-
-## Slash commands
-
-Type `/` at the start of a line:
-
-| Command | Action |
-|---------|--------|
-| `/ai` | Open AI writing assistant |
-| `/image` | Insert an image |
-| `/video` | Insert a video |
-| `/link` | Insert a link |
-
-## Character limits
-
-The editor shows real-time character counts. The counter turns red as you approach the limit.
-
-| Platform | Limit |
-|----------|-------|
-| Twitter/X | 280 (4,000 with Premium) |
-| LinkedIn | 3,000 |
-| Instagram | 2,200 |
-| Facebook | 63,206 |
-| Threads | 500 |
-| TikTok | 2,200 |
-
-## Post settings
-
-Configure these options in the sidebar:
-
-- **Title** — Internal name for organizing and searching. Never published.
-- **Account** — Which connected account to post from. Set defaults in [Post Defaults](/posts/post-defaults).
-- **Labels** — Categorize by content type, topic, or campaign. Press `L` to open.
-- **Campaign** — Group related posts together for shared timelines and analytics.
-- **Notes** — Internal notes or creative briefs only your team can see.
-- **Status** — Workflow status (Draft → Finalized). See [Post Statuses](/posts/statuses).
+For an even more realistic view, click the **Feed Preview** button (available on LinkedIn and other platforms) to see your post in a full feed context with your profile picture, desktop/mobile views, and engagement buttons.
 
 ## Saving
 
@@ -113,23 +50,31 @@ Posts remain as drafts until scheduled. Drafts won't publish automatically and c
 
 ## Collaboration
 
-Multiple team members can edit the same post simultaneously—presence indicators show who's viewing, and live cursors show where others are typing. Changes sync instantly with no version conflicts.
+### Real-time editing
 
-For detailed feedback, use comments instead of editing directly.
+Multiple team members can edit the same post simultaneously:
 
-## Keyboard shortcuts
+- **Presence indicators** show who's viewing
+- **Live cursors** show where others are typing
+- Changes sync instantly with no version conflicts
 
-| Shortcut | Action |
-|----------|--------|
-| `Cmd/Ctrl + B` | Bold |
-| `Cmd/Ctrl + I` | Italic |
-| `Cmd/Ctrl + K` | Insert link |
-| `Cmd/Ctrl + Enter` | Save post |
-| `Escape` | Close editor |
-| `/` | Slash commands |
-| `@` | Mention |
-| `#` | Hashtag |
-| `L` | Open labels |
+### Inline comments
+
+For detailed feedback, leave comments directly on the content instead of editing:
+
+1. Select text in the editor
+2. Click the comment icon that appears
+3. Add your feedback—teammates are notified
+
+Comments create threaded conversations attached to specific text, making it easy to discuss changes without losing context.
+
+## AI writing
+
+Need help with your content? Select text in the editor and click the **AI button** in the toolbar to refine, expand, or rephrase your writing.
+
+<Card title="AI Writing" icon="wand-magic-sparkles" href="/posts/ai-writing">
+  Full guide to AI-assisted content creation.
+</Card>
 
 ## Learn more
 
@@ -137,7 +82,7 @@ For detailed feedback, use comments instead of editing directly.
   <Card title="Media & Assets" icon="image" href="/posts/media">
     Platform specs, formats, and best practices.
   </Card>
-  <Card title="AI Writing" icon="wand-magic-sparkles" href="/posts/ai-writing">
-    Generate and refine content with AI.
+  <Card title="Cross-Posting" icon="arrows-repeat" href="/posts/cross-posting">
+    Publish to multiple platforms from a single post.
   </Card>
 </CardGroup>
