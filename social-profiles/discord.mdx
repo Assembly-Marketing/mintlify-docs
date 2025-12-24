@@ -6,7 +6,7 @@ icon: "discord"
 
 Discord is where communities live—and scheduled announcements keep them engaged. Instead of connecting an account, you create **webhooks** in Discord and add them to Ordinal. Messages post to specific channels through those webhooks, perfect for product updates, event reminders, and recurring community content.
 
-![Discord Post Editor](/images/ordinalLinkedIn.jpg)
+![Discord](/images/Discord.jpg)
 
 ## Overview
 
@@ -27,13 +27,14 @@ Webhooks are channel-specific URLs that accept incoming messages. You create the
   </Card>
 </CardGroup>
 
-| How it works | Details |
-|--------------|---------|
+| How it works      | Details                 |
+| ----------------- | ----------------------- |
 | Connection method | Webhook URL (not OAuth) |
 | Sender appearance | Webhook name and avatar |
-| Scope | One webhook per channel |
+| Scope             | One webhook per channel |
 
 This means:
+
 - You decide which channels get a webhook
 - Each webhook posts to exactly one channel
 - The webhook's name and avatar appear as the message sender
@@ -65,13 +66,13 @@ To post to multiple channels, create a separate webhook for each channel in Disc
 
 ### What you can post
 
-| Feature | Supported | Notes |
-|---------|-----------|-------|
-| Text messages | ✅ | Up to 2,000 characters |
-| [Attachments](#attachments) | ✅ | Up to 3 files, 10MB each |
-| Formatted text | ✅ | Headings, bold, italic, underline, code, links, lists |
-| [Mentions](#mentions) | ✅ | @here, @everyone, users, roles |
-| Link previews | ✅ | Discord unfurls links automatically |
+| Feature                     | Supported | Notes                                                 |
+| --------------------------- | --------- | ----------------------------------------------------- |
+| Text messages               | ✅         | Up to 2,000 characters                                |
+| [Attachments](#attachments) | ✅         | Up to 3 files, 10MB each                              |
+| Formatted text              | ✅         | Headings, bold, italic, underline, code, links, lists |
+| [Mentions](#mentions)       | ✅         | @here, @everyone, users, roles                        |
+| Link previews               | ✅         | Discord unfurls links automatically                   |
 
 ### Formatting
 
@@ -92,12 +93,12 @@ Formatting converts to Discord's native markdown when published.
 
 Tag users, roles, and broadcast to everyone:
 
-| Mention | What it does |
-|---------|--------------|
-| `@here` | Notifies active members in the channel |
-| `@everyone` | Notifies all members in the server |
-| `<@USER_ID>` | Mentions a specific user |
-| `<@&ROLE_ID>` | Mentions a specific role |
+| Mention       | What it does                           |
+| ------------- | -------------------------------------- |
+| `@here`       | Notifies active members in the channel |
+| `@everyone`   | Notifies all members in the server     |
+| `<@USER_ID>`  | Mentions a specific user               |
+| `<@&ROLE_ID>` | Mentions a specific role               |
 
 <Note>
   User and role mentions require Discord IDs (not display names). You can find these by enabling Developer Mode in Discord settings, then right-clicking a user or role.
@@ -111,11 +112,11 @@ Tag users, roles, and broadcast to everyone:
 
 You can attach **up to 3 files** per Discord message.
 
-| Spec | Limit |
-|------|-------|
-| Files per post | 3 maximum |
-| File size | 10MB per file |
-| Formats | JPG, PNG, GIF, MP4, MOV |
+| Spec           | Limit                   |
+| -------------- | ----------------------- |
+| Files per post | 3 maximum               |
+| File size      | 10MB per file           |
+| Formats        | JPG, PNG, GIF, MP4, MOV |
 
 Drag and drop files into the editor, paste from clipboard, or use the attachment button. Each attachment must have a unique filename.
 
