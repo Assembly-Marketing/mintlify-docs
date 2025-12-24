@@ -17,12 +17,12 @@
         {
           "anchor": "Dashboard",
           "icon": "grid-2",
-          "href": "https://app.ordinal.com"
+          "href": "https://app.tryordinal.com"
         },
         {
           "anchor": "Support",
           "icon": "headset",
-          "href": "mailto:support@ordinal.com"
+          "href": "mailto:support@tryordinal.com"
         }
       ]
     },
@@ -32,7 +32,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "icon": "house",
+            "icon": "star",
             "pages": [
               "getting-started/overview",
               "getting-started/quickstart",
@@ -41,7 +41,7 @@
           },
           {
             "group": "Social Profiles",
-            "icon": "circle-info",
+            "icon": "circle-user",
             "pages": [
               "social-profiles/overview",
               "social-profiles/linkedin",
