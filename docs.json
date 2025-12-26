@@ -149,13 +149,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:support@ordinal.com"
+        "href": "mailto:support@tryordinal.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://app.ordinal.com"
+      "href": "https://app.tryordinal.com"
     }
   },
   "contextual": {
@@ -172,8 +172,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/ordinal",
-      "linkedin": "https://linkedin.com/company/ordinal"
+      "linkedin": "https://linkedin.com/company/tryordinal",
+      "x": "https://x.com/tryordinal"
     }
   }
 }
