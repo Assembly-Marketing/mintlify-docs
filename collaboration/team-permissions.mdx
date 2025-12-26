@@ -1,206 +1,85 @@
 ---
-title: "Team & Permissions"
-description: "Manage team members and control access to your workspace"
-icon: "lock"
+title: "Members"
+icon: "users"
 ---
 
-Ordinal workspaces support teams with role-based permissions. Control who can access what—from full administrative control to view-only access—ensuring the right people manage the right content.
+Bring your team into Ordinal to collaborate on content together. Team members can create posts, leave feedback, request approvals, and view analytics—all within your shared workspace.
+
+<Note>
+Starter plans include 3 user seats. Pro plans and above have unlimited team members.
+</Note>
 
 ## Roles
 
-<Tabs>
-  <Tab title="Owner">
-    **Full control over the workspace**
-    
-    - Manage billing and subscription
-    - Add/remove all team members
-    - Delete the workspace
-    - Transfer ownership
-    - All other permissions
-    
-    Every workspace has exactly one Owner.
-  </Tab>
-  <Tab title="Admin">
-    **Administrative access**
-    
-    - Manage team members
-    - Configure workspace settings
-    - Connect/disconnect social profiles
-    - Manage all content
-    - Cannot access billing or delete workspace
-  </Tab>
-  <Tab title="Member">
-    **Standard team member**
-    
-    - Create and edit posts
-    - Schedule content
-    - View analytics
-    - Comment and collaborate
-    - Cannot change settings or manage team
-  </Tab>
-  <Tab title="Viewer">
-    **Read-only access**
-    
-    - View posts and calendar
-    - View analytics
-    - Cannot create, edit, or schedule
-    - Cannot comment
-  </Tab>
-</Tabs>
+Every workspace member has one of two roles:
 
-## Inviting team members
+| Role | What they can do |
+|------|------------------|
+| **Member** | Create and edit posts, leave comments, request and give approvals, connect social profiles, and view analytics. This is the standard role for most team members. |
+| **Administrator** | Everything Members can do, plus manage the team (invite and remove members), access billing and subscription settings, and configure workspace-level settings like approval rules. |
 
-<Steps>
-  <Step title="Open Team Settings">
-    Go to **Settings → Team**.
-  </Step>
-  <Step title="Click Invite">
-    Click the **Invite Member** button.
-  </Step>
-  <Step title="Enter email and role">
-    Enter their email address and select an appropriate role.
-    
-    <Tip>
-    Start with the Member role. Upgrade to Admin only when someone needs administrative access.
-    </Tip>
-  </Step>
-  <Step title="Send">
-    Click **Send Invite**. They'll receive an email to join.
-    
-    <Check>
-    The invitation appears in Pending Invitations until accepted.
-    </Check>
-  </Step>
-</Steps>
+<Tip>
+Start by giving everyone the Member role. You can always upgrade someone to Administrator later if they need to manage billing or invite new teammates.
+</Tip>
 
-## Changing roles
+## Inviting members
 
-<Steps>
-  <Step title="Find the team member">
-    Go to **Settings → Team** and locate them.
-  </Step>
-  <Step title="Click their role">
-    Click on their current role to open the selector.
-  </Step>
-  <Step title="Select new role">
-    Choose the new role from the dropdown.
-    
-    <Warning>
-    Downgrading removes access immediately. Confirm with the person before making changes.
-    </Warning>
-  </Step>
-  <Step title="Save">
-    Changes take effect immediately.
-  </Step>
-</Steps>
+To add someone to your workspace:
 
-## Removing team members
+1. Go to **Settings → Members**
+2. Enter their email address
+3. Click **Invite**
 
-<Steps>
-  <Step title="Find the team member">
-    Go to **Settings → Team**.
-  </Step>
-  <Step title="Click Remove">
-    Click **Remove** next to their name.
-  </Step>
-  <Step title="Confirm">
-    Confirm the removal.
-    
-    <Check>
-    They lose access immediately. Past activity remains in the audit trail.
-    </Check>
-  </Step>
-</Steps>
+**What happens next depends on whether they already use Ordinal:**
 
-## Profile-level permissions
-
-Beyond workspace roles, control access to specific social profiles:
-
-| Permission | Capabilities |
-|------------|--------------|
-| **Full Access** | Create, edit, publish, delete |
-| **Can Edit** | Create and edit, cannot publish |
-| **Can View** | View only, no modifications |
-| **No Access** | Profile hidden from this user |
+- **Existing Ordinal user** — They're added to your workspace immediately and will see it the next time they log in.
+- **New to Ordinal** — They'll receive an email invitation with a link to create their account.
 
 <Note>
-Profile permissions are useful when different team members manage different clients, or when certain profiles (executive accounts) need tighter control.
+**Important:** The person must sign up using the exact email address you invited. If they create an account with a different email, they won't have access to the workspace.
 </Note>
 
-Set profile permissions in **Settings → Profiles** by clicking on a profile and managing access.
+### Sharing the invite link
 
-## Owner and ownership transfer
+After sending an invitation, you can copy the unique invite link to share directly—handy if you want to send it via Slack, text, or another channel. Look for the **Copy Invite Link** option in the success message, or find it in the pending invitations list.
 
-The Owner:
-- Cannot be removed without transferring ownership
-- Has access to billing and subscription
-- Can delete the entire workspace
+### Managing pending invitations
 
-<Steps>
-  <Step title="Initiate transfer">
-    The current Owner goes to **Settings → General**.
-  </Step>
-  <Step title="Find Ownership section">
-    Locate the ownership transfer option.
-  </Step>
-  <Step title="Select new Owner">
-    Choose from existing Admins.
-  </Step>
-  <Step title="Confirm">
-    After transfer, the previous Owner becomes an Admin.
-  </Step>
-</Steps>
+Invitations that haven't been accepted yet appear in the **Pending** section of the Members page. From here you can:
 
-## Security best practices
+- **Resend** the invitation email if they didn't receive it
+- **Copy** the invite link to share manually
+- **Revoke** the invitation if it's no longer needed
 
-<AccordionGroup>
-  <Accordion title="Principle of least privilege">
-    Give team members only the access they need. Most people should be Members, not Admins. Upgrade when genuinely needed.
-  </Accordion>
-  <Accordion title="Regular audits">
-    Review team access quarterly:
-    - Remove people who no longer need access
-    - Verify roles are still appropriate
-    - Check for unused accounts
-  </Accordion>
-  <Accordion title="Prompt offboarding">
-    Remove access immediately when someone leaves the organization. Don't wait for "cleanup" later—this is a security risk.
-  </Accordion>
-  <Accordion title="Profile restrictions">
-    For sensitive accounts (executives, high-profile brands), use profile-level permissions to limit who can publish.
-  </Accordion>
-</AccordionGroup>
+## Removing members
 
-## Troubleshooting
+If someone leaves your team or no longer needs access:
 
-<AccordionGroup>
-  <Accordion title="Team member can't access a profile">
-    Check profile-level permissions. They may have workspace access but no access to that specific profile. Update in **Settings → Profiles**.
-  </Accordion>
-  <Accordion title="Invitation not received">
-    - Check spam/junk folders
-    - Verify the email address is correct
-    - Resend from the Pending Invitations list
-  </Accordion>
-  <Accordion title="Can't change Owner role">
-    Owner transfer requires the current Owner to initiate. Contact them to transfer ownership.
-  </Accordion>
-</AccordionGroup>
+1. Go to **Settings → Members**
+2. Find the person you want to remove
+3. Click **Remove** and confirm
 
-## Related
+They'll lose access to the workspace immediately. Any posts or content they created will remain in the workspace—nothing is deleted.
+
+<Warning>
+Make sure at least one Administrator remains in the workspace at all times. If the only Admin is removed, you'll need to contact support to regain administrative access.
+</Warning>
+
+## Agency management
+
+If you're an agency managing multiple client workspaces, you can view and manage team members across all your workspaces from the Agency Admin page.
+
+<Card title="Agency Admin" icon="building" href="/campaigns/agency-admin">
+  Manage members and calendars across client workspaces.
+</Card>
+
+## Learn more
 
 <CardGroup cols={2}>
   <Card title="Approvals" icon="circle-check" href="/collaboration/approvals">
-    Add review before publishing.
+    Add review gates before publishing.
   </Card>
   <Card title="Notifications" icon="bell" href="/collaboration/notifications">
-    Configure team alerts.
-  </Card>
-  <Card title="Social Profiles" icon="share-nodes" href="/social-profiles/overview">
-    Connect and manage profiles.
-  </Card>
-  <Card title="Managing Your Profile" icon="user" href="/account/managing-your-profile">
-    Update personal settings.
+    Configure how your team receives alerts.
   </Card>
 </CardGroup>
-

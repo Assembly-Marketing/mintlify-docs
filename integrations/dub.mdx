@@ -1,141 +1,45 @@
 ---
-title: "Dub.co"
-description: "Use Dub.co for advanced link management"
+title: "Dub"
 icon: "globe"
 ---
 
-## Overview
+Dub is a link management platform that lets you use custom branded domains for your shortlinks. Instead of `ordnl.link/abc123`, your links can use your own domain like `go.yourcompany.com/abc123`.
 
-Integrate Dub.co with Ordinal for advanced link management, custom domains, and enhanced link analytics.
+<Note>
+Dub integration is available on Pro plans and above. Shortlinks work out of the box with `ordnl.link` on all plans—you only need Dub if you want a custom domain.
+</Note>
 
-## What is Dub.co?
+## Connecting Dub
 
-Dub.co is a modern link management platform that provides:
-- Custom branded short links
-- Advanced analytics
-- Link management at scale
-- API-first architecture
+1. Go to **Settings → Dub**
+2. Click **Connect Dub**
+3. You'll be redirected to Dub to authorize the connection
+4. Select your Dub workspace and approve access
+5. You're redirected back to Ordinal with the integration active
 
-## Connecting Dub.co
+Ordinal automatically syncs your domains from Dub and uses your primary domain for new shortlinks.
 
-<Steps>
-  <Step title="Get Your API Key">
-    Log in to your Dub.co account and navigate to API settings to copy your API key.
-  </Step>
-  <Step title="Open Integrations">
-    In Ordinal, go to **Settings** → **Integrations**.
-  </Step>
-  <Step title="Find Dub.co">
-    Locate **Dub.co** and click **Connect**.
-  </Step>
-  <Step title="Enter API Key">
-    Paste your Dub.co API key.
-  </Step>
-  <Step title="Select Workspace">
-    Choose your default Dub.co workspace.
-    
-    <Check>
-    Dub.co shows as "Connected" in your integrations list.
-    </Check>
-  </Step>
-</Steps>
+## After connecting
 
-## Features
+Once connected, any shortlinks you create in Ordinal will use your Dub domain instead of `ordnl.link`. Click analytics for these links are available in both Ordinal's analytics and your Dub dashboard.
 
-### Custom Domains
+<Card title="Shortlinks" icon="link" href="/analytics/shortlinks">
+  Learn how to create and track shortlinks in your posts.
+</Card>
 
-Use your Dub.co custom domains in Ordinal:
-- Links use your branded domain
-- Consistent branding across platforms
-- Full control over link appearance
+## Changing domains
 
-### Enhanced Analytics
+Ordinal uses whichever domain is set as "primary" in your Dub account. To switch domains:
 
-Access Dub.co's advanced analytics:
-- Detailed click tracking
-- Geographic insights
-- Device and browser data
-- Referrer tracking
+1. Update your primary domain in [Dub](https://app.dub.co)
+2. In Ordinal, disconnect and reconnect the integration to sync the change
 
-### Link Management
+Existing shortlinks will continue using their original domain.
 
-Manage links created in Ordinal:
-- Links sync to your Dub.co dashboard
-- Edit destinations anytime without changing the short link
-- Bulk link management
+## Disconnecting
 
-## Configuration
+To disconnect Dub, go to **Settings → Dub** and click **Disconnect**.
 
-### Default Settings
-
-<Steps>
-  <Step title="Open Dub.co Settings">
-    Go to **Settings** → **Integrations** → **Dub.co**.
-  </Step>
-  <Step title="Set as Default">
-    Enable **Use as default shortener** to use Dub.co for all new links.
-  </Step>
-  <Step title="Select Domain">
-    Choose your default custom domain from Dub.co.
-    
-    <Tip>
-    Select your primary brand domain to ensure consistent link appearance across all posts.
-    </Tip>
-  </Step>
-  <Step title="Save">
-    Click **Save** to apply settings.
-    
-    <Check>
-    All new shortlinks will now use Dub.co with your custom domain.
-    </Check>
-  </Step>
-</Steps>
-
-### UTM Defaults
-
-Configure default UTM parameters:
-- Source: automatically set to platform
-- Medium: social
-- Campaign: configurable per post
-
-## Use Cases
-
-<CardGroup cols={2}>
-  <Card title="Brand Consistency" icon="palette">
-    All social links use your branded domain.
-  </Card>
-  <Card title="Centralized Analytics" icon="chart-line">
-    View all link performance in Dub.co.
-  </Card>
-  <Card title="Link Management" icon="link">
-    Update destinations without changing posts.
-  </Card>
-  <Card title="Team Collaboration" icon="users">
-    Share link workspaces across teams.
-  </Card>
-</CardGroup>
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="API key not working">
-    Verify your API key is correct and has the necessary permissions. Generate a new key if needed.
-  </Accordion>
-  <Accordion title="Custom domain not appearing">
-    Ensure your custom domain is verified and active in Dub.co before it will appear in Ordinal.
-  </Accordion>
-  <Accordion title="Links not syncing">
-    Check your Dub.co workspace settings. Links sync automatically but may take a few minutes to appear.
-  </Accordion>
-</AccordionGroup>
-
-## Next Steps
-
-<CardGroup cols={2}>
-  <Card title="Create Shortlinks" icon="link" href="/analytics/shortlinks">
-    Start using Dub.co for links.
-  </Card>
-  <Card title="View Analytics" icon="chart-line" href="/analytics/overview">
-    Track link performance.
-  </Card>
-</CardGroup>
+- **Existing shortlinks** continue to work—they're still hosted by Dub
+- **New shortlinks** will use `ordnl.link` instead of your custom domain
+- **Analytics** for your Dub links remain accessible in your Dub dashboard

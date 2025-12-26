@@ -1,158 +1,66 @@
 ---
 title: "Shortlinks"
-description: "Create and track branded short links"
 icon: "link"
 ---
 
-## Overview
+Shortlinks let you track clicks on the links you share in your posts. Instead of posting a long URL, you can shorten it with one click—and Ordinal will automatically track how many people clicked, where they came from, and what devices they used.
 
-Shortlinks make your URLs cleaner and trackable. Create branded short links for any URL and track clicks, conversions, and engagement.
+## Creating shortlinks
 
-## Creating Shortlinks
+Shortlinks are created right inside the post editor—no need to leave your draft or visit a separate page. They work out of the box with Ordinal's default domain (`ordnl.link`).
 
-### Quick Create
+**To shorten a link:**
 
-<Steps>
-  <Step title="Open Shortlinks">
-    Click **New Shortlink** in the Shortlinks section, or paste a URL anywhere in Ordinal.
-  </Step>
-  <Step title="Enter Destination URL">
-    Paste the full URL you want to shorten.
-  </Step>
-  <Step title="Customize the Short Code">
-    Optionally create a memorable custom slug (e.g., `/summer-sale`).
-    
-    <Tip>
-    Use descriptive slugs that hint at the content—they're more memorable and trustworthy.
-    </Tip>
-  </Step>
-  <Step title="Create Link">
-    Click **Create** to generate your shortlink.
-    
-    <Check>
-    Your shortlink is created and ready to use. Click to copy it to your clipboard.
-    </Check>
-  </Step>
-</Steps>
+1. Add a link to your post (paste a URL or use `Cmd/Ctrl + K` to insert one)
+2. Click on the link in the editor
+3. In the popover that appears, toggle **Shorten Link?** on
+4. The URL is replaced with a tracked shortlink automatically
 
-### In Post Composer
-
-Create shortlinks while drafting:
-
-<Steps>
-  <Step title="Paste a URL">
-    Paste any URL into your post content.
-  </Step>
-  <Step title="Click Shorten">
-    Click the **Shorten** button that appears on the URL.
-    
-    <Check>
-    The URL is replaced with a tracked shortlink automatically.
-    </Check>
-  </Step>
-</Steps>
-
-## Shortlink Features
-
-### Custom Slugs
-
-Create memorable short links:
-- `ord.co/product-launch`
-- `ord.co/summer-sale`
-- `ord.co/webinar-signup`
-
-### Custom Domains
-
-Use your own domain for complete brand control:
-
-<Steps>
-  <Step title="Add Custom Domain">
-    Go to **Settings** → **Shortlinks** → **Custom Domains**.
-  </Step>
-  <Step title="Enter Your Domain">
-    Enter the domain you want to use (e.g., `links.yourbrand.com`).
-  </Step>
-  <Step title="Configure DNS">
-    Add the required DNS records to your domain registrar.
-    
-    <Check>
-    Once verified, all new shortlinks use your custom domain.
-    </Check>
-  </Step>
-</Steps>
-
-### UTM Parameters
-
-Automatically add tracking parameters:
-- Campaign source
-- Medium
-- Campaign name
-- Custom parameters
+The shortened link will look something like `ordnl.link/abc123`. When your post publishes, every click on that link is tracked.
 
 <Tip>
-Set up UTM templates for consistent tracking across all your links.
+You can toggle shortening off to revert back to the original URL. The shortened link remains in your analytics history.
 </Tip>
 
-## Analytics
+### Custom domains
 
-### Click Tracking
+By default, shortlinks use `ordnl.link`. If you'd prefer a branded domain like `go.yourcompany.com`, you can connect your Dub account.
 
-See who's clicking your links:
-- Total clicks over time
-- Unique vs. repeat visitors
-- Geographic distribution
+<Card title="Dub Integration" icon="globe" href="/integrations/dub">
+  Set up a custom domain for your shortlinks.
+</Card>
 
-### Device & Browser
+## Click analytics
 
-Understand your audience:
-- Mobile vs. desktop
-- Browser breakdown
-- Operating systems
+Once your post publishes and people start clicking, you can view detailed analytics in the **Analytics** section of Ordinal. Click data appears under the **Click Data** tab.
 
-### Referrers
+### Available metrics
 
-See where clicks come from:
-- Social platform
-- Direct visits
-- Other websites
+| Metric | What it shows |
+|--------|---------------|
+| **Total clicks** | Overall click count across all your shortlinks, displayed as a timeseries chart |
+| **Clicks by link** | Which shortlinks received the most clicks |
+| **Clicks by destination URL** | Which destination URLs received the most traffic |
+| **Countries** | Geographic breakdown of where clicks originated |
+| **Regions** | More granular location data within countries |
+| **Referrers** | Where the traffic came from (social platform, direct, other websites) |
+| **Devices** | Mobile vs. desktop breakdown |
+| **Browsers** | Chrome, Safari, Firefox, etc. |
+| **Operating systems** | Windows, macOS, iOS, Android, etc. |
 
-## Managing Shortlinks
+Use the date range filter to zoom in on specific time periods—helpful for measuring campaign performance or comparing week-over-week trends.
 
-### Edit Links
+<Tip>
+Click analytics only track links that were shortened using Ordinal's link shortener. Regular links in your posts aren't tracked.
+</Tip>
 
-Update shortlink settings:
-- Change destination URL (link stays the same)
-- Update UTM parameters
-- Modify expiration
-
-### Archive Links
-
-Remove unused links from active view:
-- Links still work
-- Hidden from main list
-- Accessible in archive
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Custom slug already taken">
-    Choose a different slug, or add a number or date to make it unique.
-  </Accordion>
-  <Accordion title="Click counts not updating">
-    Analytics may take a few minutes to update. If still not updating after an hour, check that the link is correctly configured.
-  </Accordion>
-  <Accordion title="Custom domain not verifying">
-    Double-check DNS records are correctly configured. DNS changes can take up to 48 hours to propagate.
-  </Accordion>
-</AccordionGroup>
-
-## Next Steps
+## Learn more
 
 <CardGroup cols={2}>
-  <Card title="View Analytics" icon="chart-line" href="/analytics/overview">
-    Track overall performance.
+  <Card title="Dub Integration" icon="globe" href="/integrations/dub">
+    Use a custom domain for your shortlinks.
   </Card>
-  <Card title="Integrate Dub.co" icon="globe" href="/integrations/dub">
-    Advanced link management.
+  <Card title="Analytics Overview" icon="chart-line" href="/analytics/overview">
+    Explore all your performance metrics.
   </Card>
 </CardGroup>

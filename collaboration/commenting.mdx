@@ -1,163 +1,76 @@
 ---
 title: "Comments"
-description: "Collaborate on content with feedback and discussion"
 icon: "comment"
 ---
 
-Comments enable team collaboration directly on posts. Leave feedback, ask questions, and discuss content without leaving Ordinal. Comments create a conversation thread attached to each post, visible to everyone with access.
-
-## Leaving comments
-
-<Steps>
-  <Step title="Open the post">
-    Click any post to open the detail view.
-  </Step>
-  <Step title="Find the comment area">
-    Scroll to the comments section in the sidebar or below the preview.
-  </Step>
-  <Step title="Write your comment">
-    Type your feedback in the comment field.
-  </Step>
-  <Step title="Send">
-    Press **Enter** or click **Send**.
-    
-    <Check>
-    Your comment appears immediately. The post author is notified.
-    </Check>
-  </Step>
-</Steps>
-
-## @Mentions
-
-Tag specific people to notify them:
-
-<Steps>
-  <Step title="Type @">
-    In your comment, type `@` to trigger the mention picker.
-  </Step>
-  <Step title="Search">
-    Start typing a name to filter results.
-  </Step>
-  <Step title="Select">
-    Click or press Enter to insert the mention.
-  </Step>
-</Steps>
-
-When you @mention someone:
-- They receive a notification
-- They're added as a subscriber to the post
-- The mention is highlighted in the comment
-
-**Example uses:**
-- "@Sarah should this go out before the press release?"
-- "@Legal please review the compliance language"
-- "@Marketing-team this one's ready for your input"
-
-<Tip>
-Use @mentions to ensure the right people see your feedback. Don't assume they'll check on their own.
-</Tip>
+Comments let your team collaborate directly on posts—leave feedback, ask questions, and refine content before it goes live. Ordinal supports two types of comments: inline comments for specific text suggestions, and post comments for overall feedback.
 
 ## Inline comments
 
-<Steps>
-  <Step title="Select text">
-    Highlight the specific text you want to comment on.
-  </Step>
-  <Step title="Click comment icon">
-    A comment icon appears near your selection.
-  </Step>
-  <Step title="Write feedback">
-    Your comment links directly to that text.
-    
-    <Check>
-    Inline comments make it clear exactly what you're referencing—great for suggesting word changes.
-    </Check>
-  </Step>
-</Steps>
+Inline comments attach directly to specific text in your post—perfect for suggesting word changes, asking about a particular phrase, or pointing out issues.
 
-## Comment features
+**To add an inline comment:**
+1. Select the text you want to comment on
+2. Click the **Comment** button that appears
+3. Write your feedback and submit
 
-<Tabs>
-  <Tab title="Threads">
-    Reply directly to existing comments to keep conversations organized:
-    
-    1. Find the comment you want to respond to
-    2. Click **Reply**
-    3. Your response appears nested under the original
-    
-    Threaded discussions stay together, making it easy to follow multiple conversations.
-  </Tab>
-  <Tab title="Reactions">
-    Quick reactions let you acknowledge without adding to the thread:
-    
-    | Reaction | Meaning |
-    |----------|---------|
-    | 👍 | Agree or acknowledged |
-    | ❤️ | Love it |
-    | 🤔 | Thinking about it |
-    | ✅ | Done |
-    
-    Click to add, or click an existing reaction to add your vote.
-  </Tab>
-  <Tab title="Attachments">
-    Add files to comments when needed:
-    
-    - Screenshots showing examples
-    - Reference documents
-    - Links to related content
-    
-    Click the attachment icon or drag files directly in.
-  </Tab>
-</Tabs>
+The selected text is highlighted, and your comment links directly to it.
 
-## Resolving comments
+### Replies and reactions
 
-Mark comments as resolved when feedback has been addressed:
+Inline comments support threaded conversations:
+- **Reply** to continue the discussion
+- **React with emoji** to acknowledge without adding to the thread
+- **@Mention** teammates to loop them in
 
-<Steps>
-  <Step title="Address the feedback">
-    Make the requested changes to the post.
-  </Step>
-  <Step title="Click Resolve">
-    Click the **Resolve** button on the comment.
-    
-    <Check>
-    The comment collapses, reducing visual clutter. It remains accessible for reference.
-    </Check>
-  </Step>
-</Steps>
+### Resolving comments
+
+When feedback has been addressed, click **Resolve** on the comment. Resolved comments collapse to reduce visual clutter but remain accessible for reference.
 
 <Tip>
 Resolve comments as you address them. This creates a clear trail of what's been handled and what's still pending.
 </Tip>
 
-## Editing and deleting
+### Comments sidebar
 
-### Edit your comments
+Click the **Comments** button in the post header to open the comments sidebar. This gives you a centralized view of all inline comments across the post.
 
-Made a typo? Click the edit icon on your comment to revise it. Edited comments show an "edited" indicator.
+| View | What it shows |
+|------|---------------|
+| **Active** | Comments that still need attention |
+| **Resolved** | Toggle "Show resolved comments" to see addressed feedback |
 
-### Delete comments
+Each comment shows the original highlighted text, making it easy to understand context even if the content has changed.
 
-Remove comments you no longer need:
-- Click delete and confirm
-- Only comment authors and Admins can delete
-- Deleted comments cannot be recovered
+## Post comments
 
-<Warning>
-Consider resolving instead of deleting—you may need the context later.
-</Warning>
+Post comments appear in the sidebar and are visible to everyone with access. Use them for general feedback, questions, or discussions about the post as a whole.
 
-## Comments vs activity
+**To leave a comment:**
+1. Open a post and find the **Comments** section in the sidebar
+2. Type your message
+3. Press `Cmd/Ctrl + Enter` to send
 
-The post sidebar shows both:
+Your comment appears immediately and the post author is notified.
 
-| Type | What it contains |
-|------|------------------|
-| **Comments** | Manual feedback from team members—discussions, mentions, collaboration |
-| **Activity** | Automatic system log—edits, status changes, publishing events |
+### @Mentions
 
-Both provide context on a post's history but serve different purposes.
+Tag teammates by typing `@` followed by their name. When you @mention someone:
+- They receive a notification (in-app, email, or Slack based on their preferences)
+- They're added as a subscriber to the post
+- The mention appears highlighted in your comment
+
+<Tip>
+Use @mentions to ensure the right people see your feedback—don't assume they'll check on their own.
+</Tip>
+
+### Deleting comments
+
+Click the delete icon on your comment to remove it. Only comment authors and admins can delete comments. Deleted comments cannot be recovered.
+
+<Note>
+Commenting on a post automatically subscribes you to it. You'll receive notifications when others comment or the post status changes.
+</Note>
 
 ## Notifications
 
@@ -165,51 +78,13 @@ Stay updated on comment activity:
 
 | Event | When you're notified |
 |-------|---------------------|
-| New comments | When someone comments on posts you're subscribed to |
-| Replies | When someone replies to your comment |
-| Mentions | When you're @mentioned anywhere |
+| New comment | Someone comments on a post you're subscribed to |
+| Reply | Someone replies to your comment |
+| @Mention | You're tagged in a comment |
 
-Configure which notifications you receive in **Settings → Notifications**.
+Configure delivery preferences in **Settings → Notifications**.
 
-## Best practices
-
-<AccordionGroup>
-  <Accordion title="Be specific">
-    Reference exactly what you're commenting about. "The second paragraph needs work" beats "This needs work."
-  </Accordion>
-  <Accordion title="Use @mentions">
-    Ensure the right people see your feedback. Tag them directly.
-  </Accordion>
-  <Accordion title="Keep it constructive">
-    Focus on improvements and suggestions rather than just criticism.
-  </Accordion>
-  <Accordion title="Close the loop">
-    Resolve comments when addressed. Mark things done.
-  </Accordion>
-  <Accordion title="Check regularly">
-    Don't miss feedback. Review posts with pending comments before scheduling.
-  </Accordion>
-</AccordionGroup>
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Comment not saving">
-    Check your internet connection. Comments require an active connection. Try refreshing and resubmitting.
-  </Accordion>
-  <Accordion title="Can't mention a team member">
-    - Verify they're a member of your workspace
-    - Type more characters to filter results
-    - Only active workspace members can be mentioned
-  </Accordion>
-  <Accordion title="Not receiving notifications">
-    - Check notification settings for the affected user
-    - Verify email isn't in spam
-    - Check in-app notification preferences
-  </Accordion>
-</AccordionGroup>
-
-## Related
+## Learn more
 
 <CardGroup cols={2}>
   <Card title="Approvals" icon="circle-check" href="/collaboration/approvals">
@@ -217,11 +92,5 @@ Configure which notifications you receive in **Settings → Notifications**.
   </Card>
   <Card title="Notifications" icon="bell" href="/collaboration/notifications">
     Configure comment alerts.
-  </Card>
-  <Card title="Drafting Posts" icon="pen-to-square" href="/posts/drafting-posts">
-    Create collaborative content.
-  </Card>
-  <Card title="Team & Permissions" icon="lock" href="/collaboration/team-permissions">
-    Manage who can access what.
   </Card>
 </CardGroup>

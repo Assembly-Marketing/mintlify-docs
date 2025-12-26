@@ -65,6 +65,7 @@
                 "group": "Posts",
                 "icon": "file-lines",
                 "pages": [
+                  "posts/overview",
                   "posts/creating-posts",
                   "posts/drafting-posts",
                   "posts/media",
@@ -105,8 +106,7 @@
             "icon": "user",
             "pages": [
               "account/managing-your-profile",
-              "account/subscription-plans",
-              "account/billing-and-payments"
+              "account/subscription-plans"
             ]
           },
           {

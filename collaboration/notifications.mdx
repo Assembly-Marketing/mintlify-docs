@@ -1,224 +1,114 @@
 ---
 title: "Notifications"
-description: "Configure how and when you receive alerts"
 icon: "bell"
 ---
 
-Notifications keep you informed about activity that matters—posts publishing, approvals pending, comments on your content, and more. Configure delivery channels and frequency to stay updated without being overwhelmed.
+Notifications keep you informed about what matters—posts publishing, approvals pending, comments on your content, and more. Customize which notifications you receive and how they're delivered.
 
 ## Notification types
 
-<Tabs>
-  <Tab title="Content">
-    | Event | Description |
-    |-------|-------------|
-    | Post published | When scheduled posts go live |
-    | Post failed | When publishing fails (action needed) |
-    | Scheduled reminder | Heads-up before posts publish |
-    
-    <Warning>
-    Always enable failure notifications. Failed posts need immediate attention and shouldn't sit unnoticed.
-    </Warning>
-  </Tab>
-  <Tab title="Collaboration">
-    | Event | Description |
-    |-------|-------------|
-    | Comment added | New comments on posts you're subscribed to |
-    | Reply to comment | Someone responded to your comment |
-    | @Mentioned | Someone tagged you |
-    | Approval requested | Someone wants your review |
-    | Approval response | Your post was approved or rejected |
-  </Tab>
-  <Tab title="Team">
-    | Event | Description |
-    |-------|-------------|
-    | New team member | Someone joined your workspace |
-    | Permissions changed | Your access was modified |
-    | Profile connected | Social profile status changed |
-  </Tab>
-</Tabs>
+Ordinal sends notifications for two categories of events:
+
+### Posts you're subscribed to
+
+| Notification | When it's sent |
+|--------------|----------------|
+| **Mentions** | Someone @mentions you in a comment |
+| **Comments & Replies** | New comments or replies on the post |
+| **Post published** | A scheduled post goes live |
+| **Post errored** | A post fails to publish (action needed) |
+
+### Approvals
+
+| Notification | When it's sent |
+|--------------|----------------|
+| **Approval Requested** | Someone requests your approval |
+| **Approval Reminders** | A pending approval reaches its due date |
+| **Approval Completed** | Your approval request is approved |
+| **Unscheduled due to Blocking Approval** | A post gets unscheduled because it's missing required approval |
+
+<Warning>
+Always keep "Post errored" notifications enabled. Failed posts need immediate attention.
+</Warning>
 
 ## Delivery channels
 
-<Tabs>
-  <Tab title="Email">
-    Receive notifications via email:
-    
-    | Frequency | When to use |
-    |-----------|-------------|
-    | **Immediate** | Urgent items like failures |
-    | **Daily digest** | Regular updates without constant emails |
-    | **Weekly digest** | Low-priority summaries |
-    
-    <Tip>
-    Use immediate for failures and approvals, digests for comments and general activity.
-    </Tip>
-  </Tab>
-  <Tab title="Slack">
-    If your workspace has Slack connected:
-    
-    - **Direct messages** — Personal notifications
-    - **Channel messages** — Team notifications
-    - **Thread replies** — Keep conversations together
-    
-    Great for fast response on approvals and mentions.
-  </Tab>
-  <Tab title="In-app">
-    Notifications appear in Ordinal's notification panel:
-    
-    - Bell icon shows unread count
-    - Click to see recent notifications
-    - Click any notification to navigate to source
-  </Tab>
-  <Tab title="Mobile push">
-    If using the mobile app:
-    
-    - Push notifications for urgent items
-    - Configurable quiet hours
-    - Critical alerts can bypass quiet hours
-  </Tab>
-</Tabs>
+Each notification type can be delivered through:
 
-## Configuring notifications
+| Channel | Description |
+|---------|-------------|
+| **In-app** | Appears in your Inbox (bell icon in sidebar). Always available. |
+| **Email** | Sent to your registered email address. |
+| **Slack** | Sent as a direct message if you've connected Slack for notifications. |
 
-<Steps>
-  <Step title="Open Settings">
-    Go to **Settings → Notifications**.
-  </Step>
-  <Step title="Find the notification type">
-    Locate the event you want to configure (content, collaboration, or team).
-  </Step>
-  <Step title="Select channels">
-    Choose which channels should receive this notification (email, Slack, in-app, mobile).
-  </Step>
-  <Step title="Set frequency">
-    Choose delivery timing—immediate, daily digest, or weekly digest.
-  </Step>
-  <Step title="Save">
-    Your preferences are updated immediately.
-    
-    <Check>
-    New notifications will follow your configured preferences.
-    </Check>
-  </Step>
-</Steps>
+Go to **Settings → Notifications** to toggle each channel on or off per notification type.
 
-## Quiet hours
+## Slack notifications
 
-Set times when you won't receive notifications:
+For fast response on approvals and mentions, connect Slack to receive notifications as direct messages.
 
-<Steps>
-  <Step title="Enable quiet hours">
-    Toggle on Quiet Hours in notification settings.
-  </Step>
-  <Step title="Set schedule">
-    Define start time, end time, and which days.
-    
-    <Tip>
-    Set quiet hours for evenings and weekends to maintain work-life balance.
-    </Tip>
-  </Step>
-  <Step title="Configure exceptions">
-    Optionally allow critical alerts (like failed posts) to bypass quiet hours.
-  </Step>
-</Steps>
+**To set up:**
+1. Go to **Settings → Slack**
+2. Click **Connect Slack for Notifications**
+3. Authorize Ordinal to send you messages
+4. Return to **Settings → Notifications** and enable Slack for the notification types you want
+
+Once connected, Slack notifications appear as DMs from the Ordinal app. Click any notification to jump directly to the post or approval.
+
+<Tip>
+Slack works especially well for approval requests and post failures—you'll see them immediately without checking email.
+</Tip>
 
 ## Post subscriptions
 
-You're automatically subscribed to posts you:
-- Create
-- Comment on
-- Are @mentioned in
-- Are assigned as approver for
+You receive notifications about posts you're **subscribed** to. Subscriptions determine who gets notified about comments, status changes, and publishing events.
 
-Subscribed posts notify you of comments and status changes.
+### Automatic subscription
 
-**To unsubscribe:**
+You're automatically subscribed when you:
+- **Create** a post
+- **Comment** on a post
+- Are **@mentioned** in a comment
+- Are assigned as an **approver**
+- Are **added as a subscriber** by someone else
+
+### Manual subscription
+
+To follow a post you're interested in:
 1. Open the post
-2. Find the subscription toggle
-3. Turn off notifications for this post
+2. Find the **Subscribers** section in the sidebar
+3. Click to add yourself
 
-## Notification grouping
+To stop receiving notifications, remove yourself from the subscribers list.
 
-Reduce volume by grouping similar notifications:
+### Adding others
 
-| Grouping | Effect |
-|----------|--------|
-| Multiple comments on one post | Single notification |
-| Several pending approvals | One summary |
-| Activity from same person | Batched together |
+You can add teammates as subscribers to keep them informed:
+1. Open the post
+2. Find the **Subscribers** section
+3. Click **Add** and select team members
 
-Enable grouping in Settings to reduce noise while staying informed.
+They'll receive notifications based on their own notification preferences.
 
-## Managing notifications
+## Configuring notifications
 
-### Mark as read
+Go to **Settings → Notifications** to customize your preferences:
 
-- Click individual notifications to mark read
-- Use "Mark all as read" to clear your inbox
+- Toggle each notification type on or off
+- Choose which channels receive each type (in-app, email, Slack)
+- Changes take effect immediately
 
-### Notification history
+<Note>
+In-app notifications for "Approval Requested" cannot be disabled—you'll always see pending approvals in your Inbox.
+</Note>
 
-Access past notifications from the panel. Click any notification to navigate to its source.
-
-## Best practices
-
-<AccordionGroup>
-  <Accordion title="Prioritize failures">
-    Always enable immediate alerts for failed posts. These need action and shouldn't wait for a digest.
-  </Accordion>
-  <Accordion title="Use digests for volume">
-    If you're getting too many emails, switch high-volume types (comments, activity) to daily digest.
-  </Accordion>
-  <Accordion title="Enable Slack for collaboration">
-    Approval requests and mentions work well as Slack messages for fast response.
-  </Accordion>
-  <Accordion title="Set quiet hours">
-    Protect focus time and personal hours. You can always check manually when needed.
-  </Accordion>
-  <Accordion title="Review periodically">
-    As your role changes, revisit notification settings. What mattered before may not matter now.
-  </Accordion>
-</AccordionGroup>
-
-## Troubleshooting
-
-<AccordionGroup>
-  <Accordion title="Not receiving email notifications">
-    - Check spam/junk folders
-    - Add Ordinal's email domain to contacts
-    - Verify email is correct in **Settings → Profile**
-  </Accordion>
-  <Accordion title="Slack notifications not working">
-    - Ensure Slack is connected in **Settings → Integrations**
-    - Re-authorize if the connection expired
-    - Check Slack channel permissions
-  </Accordion>
-  <Accordion title="Too many notifications">
-    - Switch from immediate to digest delivery
-    - Enable notification grouping
-    - Unsubscribe from posts you no longer need to follow
-  </Accordion>
-  <Accordion title="Missing specific notifications">
-    - Check if that notification type is enabled
-    - Verify the correct channel is selected
-    - Ensure you're subscribed to the relevant post
-  </Accordion>
-</AccordionGroup>
-
-## Related
+## Learn more
 
 <CardGroup cols={2}>
-  <Card title="Slack Integration" icon="slack" href="/integrations/slack">
-    Connect Slack for notifications.
-  </Card>
   <Card title="Approvals" icon="circle-check" href="/collaboration/approvals">
     Review and approve content.
   </Card>
   <Card title="Comments" icon="comment" href="/collaboration/commenting">
     Collaborate on posts.
-  </Card>
-  <Card title="Team & Permissions" icon="lock" href="/collaboration/team-permissions">
-    Manage team access.
   </Card>
 </CardGroup>
