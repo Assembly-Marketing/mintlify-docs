@@ -1741,7 +1741,7 @@
         }
       }
     },
-    "/instagram/locations/search": {
+    "/instagram/locations": {
       "get": {
         "operationId": "instagram-searchLocations",
         "summary": "Search Instagram locations",
