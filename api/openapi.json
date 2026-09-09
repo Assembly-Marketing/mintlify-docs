@@ -1758,7 +1758,8 @@
             "schema": {
               "type": "string",
               "minLength": 1
-            }
+            },
+            "example": "Central Park"
           }
         ],
         "responses": {
